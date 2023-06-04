@@ -74,7 +74,7 @@ h2 {
     font-weight: 400;
     font-size: 2rem;
 
-    margin-left: 5.2rem;
+    margin: .5rem 0 3rem 5.2rem;
 }
 
 p,
@@ -91,6 +91,7 @@ ul {
 a {
     text-decoration: none;
 }
+
 /* 
 .dottedgrid {
     width: 5.1rem;
@@ -220,8 +221,8 @@ a {
     transition: transform .5s ease-in-out;
 }
 
-main>.infoBlock{
-    padding: 1.5rem;
+main>.infoBlock {
+    padding: 5rem 1.5rem;
 }
 
 .infoBlock {
@@ -275,3 +276,49 @@ main>.infoBlock{
     border: .2rem solid var(--yellow-color);
     border-radius: 5rem;
 }
+
+
+
+
+/************/
+/* Over mij */
+/************/
+#overmij>div>section>h2 {
+    color: var(--green-color);
+}
+
+#overmij>div>section>p {
+    margin: 1rem 0;
+}
+
+#overmij>div>section>h3 {
+    color: var(--green-color);
+    font-weight: 600;
+}
+
+#overmij>div>section>ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin-top: 1.5rem;
+}
+
+ #overmij>div>section>ul>li {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 4rem; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#overmij>div>section>ul>li>p {
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+#overmij>div>section>ul>li>img {
+    width: 2.2rem;
+} 
