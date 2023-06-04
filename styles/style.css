@@ -198,14 +198,13 @@ a {
     border: .1rem solid white;
 }
 
-
 .openMenu {
-    transform: translateX(0);
+    transform: translateX(0) !important;
     transition: transform .5s ease-in-out;
 }
 
 .closeMenu {
-    transform: translateX(100);
+    transform: translateX(100%) !important;
     transition: transform .5s ease-in-out;
 }
 
@@ -249,7 +248,7 @@ main>.infoBlock{
     padding: .75rem;
     margin: 2rem 0 .5rem 0;
     font-family: var(--font-paragraph);
-    font-size: 1.1rem;
+    font-size: 1rem;
     background-color: var(--yellow-color);
     color: var(--font-color2);
     border-radius: 5rem;
@@ -260,7 +259,7 @@ main>.infoBlock{
     padding: .75rem;
     margin: .5rem 0 2rem 0;
     font-family: var(--font-paragraph);
-    font-size: 1.1rem;
+    font-size: 1rem;
     border: .2rem solid var(--yellow-color);
     border-radius: 5rem;
 }
