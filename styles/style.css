@@ -1,0 +1,193 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root {
+    --lettertype-koppen: 'Fira Code', 'Courier New', Courier, monospace;
+    --lettertype-paragraaf: 'Roboto', Arial, Helvetica, sans-serif;
+
+    --lettertype-kleur: #D4D4D4;
+    --lettertype-kleur2: #111111;
+    --achtergrondkleur1: #1e1e1e;
+    --achtergrondkleur2: #252526;
+    --achtergrondkleur3: rgba(255, 255, 255, 0.61);
+    --grijze-kleur: #676767;
+
+    --gele-kleur: #F2BC1B;
+    --groene-kleur: #8ace24;
+    --blauwe-kleur: #3d79f2;
+    --roze-kleur: #f22e8a;
+}
+
+
+
+
+
+/*******************/
+/* ALGEMENE OPMAAK */
+/*******************/
+body {
+    width: 100vw;
+}
+
+header {
+    background-color: var(--achtergrondkleur1);
+    height: 100vh;
+}
+
+main,
+footer {
+    background-color: var(--achtergrondkleur2);
+}
+
+img {
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+p,
+a,
+li {
+    color: var(--lettertype-kleur);
+}
+
+h1,
+h2,
+h3,
+a {
+    font-family: var(--lettertype-koppen);
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+p,
+li {
+    font-family: var(--lettertype-paragraaf);
+    line-height: 1.3rem;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.dottedgrid {
+    width: 5.1rem;
+    height: 3.5rem;
+    position: absolute;
+
+    background-image: radial-gradient(var(--lettertype-kleur), .12rem, transparent 0);
+    background-size: 1.5rem 1.5rem;
+    background-position: -2rem -2rem;
+}
+
+
+/*******/
+/* NAV */
+/*******/
+header>div{
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+header>nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--achtergrondkleur1);
+    z-index: 100;
+    padding: 2rem 2rem;
+    transform: translateX(100%);
+}
+
+header>nav>button{
+    margin: 1.5rem;
+    width: 2.5rem;
+    aspect-ratio: 1/1;
+    position: absolute;
+    right: 0;
+    top:0;
+}
+
+header>nav>ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header>nav>ul>li {
+    margin-bottom: 3rem;
+}
+
+header nav ul li:first-of-type a:hover,
+header nav ul li:first-of-type a:focus {
+    color: var(--gele-kleur);
+}
+
+header nav ul li:nth-of-type(2) a:hover,
+header nav ul li:nth-of-type(2) a:focus {
+    color: var(--groene-kleur);
+}
+
+header nav ul li:nth-of-type(3) a:hover,
+header nav ul li:nth-of-type(3) a:focus {
+    color: var(--blauwe-kleur);
+}
+
+header nav ul li:last-of-type a:hover,
+header nav ul li:last-of-type a:focus {
+    color: var(--roze-kleur);
+}
+
+
+
+.closeBtn {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: .5rem;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    /* position: absolute;
+    top: .4rem;
+    right: .8rem; */
+}
+
+
+.closeBtn:focus {
+    border: .1rem solid white;
+}
+
+
+.openMenu{
+    transform: translateX(0);
+    transition: transform .5s ease-in-out;
+}
+
+.closeMenu{
+    transform: translateX(100);
+    transition: transform .5s ease-in-out;
+}
