@@ -110,7 +110,7 @@ a {
 }
 
 #homepagina>div {
-    padding: 1.5rem;
+    padding: 1rem 1.5rem;
     display: flex;
     justify-content: space-between;
     position: fixed;
@@ -210,7 +210,7 @@ a {
 }
 
 main>.infoBlock{
-    padding: 3rem;
+    padding: 1.5rem;
 }
 
 .infoBlock {
@@ -226,7 +226,7 @@ main>.infoBlock{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 6rem;
+    padding-top: 6.5rem;
 }
 
 /* pixelart icon */
