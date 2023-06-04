@@ -6,20 +6,20 @@
 }
 
 :root {
-    --lettertype-koppen: 'Fira Code', 'Courier New', Courier, monospace;
-    --lettertype-paragraaf: 'Roboto', Arial, Helvetica, sans-serif;
+    --font-headings: 'Fira Code', 'Courier New', Courier, monospace;
+    --font-paragraph: 'Roboto', Arial, Helvetica, sans-serif;
 
-    --lettertype-kleur: #D4D4D4;
-    --lettertype-kleur2: #111111;
-    --achtergrondkleur1: #1e1e1e;
-    --achtergrondkleur2: #252526;
-    --achtergrondkleur3: rgba(255, 255, 255, 0.61);
-    --grijze-kleur: #676767;
+    --font-color: #D4D4D4;
+    --font-color2: #111111;
+    --backgroundcolor1: #1e1e1e;
+    --backgroundcolor2: #252526;
+    --backgroundcolor3: rgba(255, 255, 255, 0.61);
+    --gray-color: #676767;
 
-    --gele-kleur: #F2BC1B;
-    --groene-kleur: #8ace24;
-    --blauwe-kleur: #3d79f2;
-    --roze-kleur: #f22e8a;
+    --yellow-color: #F2BC1B;
+    --green-color: #8ace24;
+    --blue-color: #3d79f2;
+    --pink-color: #f22e8a;
 }
 
 
@@ -34,13 +34,13 @@ body {
 }
 
 #homepagina {
-    background-color: var(--achtergrondkleur1);
+    background-color: var(--backgroundcolor1);
     height: 100vh;
 }
 
 main,
 footer {
-    background-color: var(--achtergrondkleur2);
+    background-color: var(--backgroundcolor2);
 }
 
 img {
@@ -53,7 +53,7 @@ h3,
 p,
 a,
 li {
-    color: var(--lettertype-kleur);
+    color: var(--font-color);
     font-size: 1rem;
 }
 
@@ -61,10 +61,10 @@ h1,
 h2,
 h3,
 a {
-    font-family: var(--lettertype-koppen);
+    font-family: var(--font-headings);
 }
 
-h1{
+h1 {
     font-size: 1.7rem;
     font-weight: 300;
     margin: 1rem;
@@ -78,7 +78,7 @@ h2 {
 
 p,
 li {
-    font-family: var(--lettertype-paragraaf);
+    font-family: var(--font-paragraph);
     line-height: 1.3rem;
 }
 
@@ -96,7 +96,7 @@ a {
     height: 3.5rem;
     position: absolute;
 
-    background-image: radial-gradient(var(--lettertype-kleur), .12rem, transparent 0);
+    background-image: radial-gradient(var(--font-color), .12rem, transparent 0);
     background-size: 1.5rem 1.5rem;
     background-position: -2rem -2rem;
 }
@@ -106,7 +106,7 @@ a {
 /* NAV */
 /*******/
 #homepagina {
-    margin-top: 4rem;
+    padding: 3rem;
 }
 
 #homepagina>div {
@@ -117,7 +117,7 @@ a {
     top: 0;
     left: 0;
     right: 0;
-    background: var(--achtergrondkleur1);
+    background: var(--backgroundcolor1);
     z-index: 10;
 }
 
@@ -129,7 +129,7 @@ a {
     bottom: 0;
     width: 100vw;
     height: 100vh;
-    background-color: var(--achtergrondkleur1);
+    background-color: var(--backgroundcolor1);
     z-index: 100;
     padding: 2rem 2rem;
     transform: translateX(100%);
@@ -160,22 +160,22 @@ a {
 
 #homepagina nav ul li:first-of-type a:hover,
 #homepagina nav ul li:first-of-type a:focus {
-    color: var(--gele-kleur);
+    color: var(--yellow-color);
 }
 
 #homepagina nav ul li:nth-of-type(2) a:hover,
 #homepagina nav ul li:nth-of-type(2) a:focus {
-    color: var(--groene-kleur);
+    color: var(--green-color);
 }
 
 #homepagina nav ul li:nth-of-type(3) a:hover,
 #homepagina nav ul li:nth-of-type(3) a:focus {
-    color: var(--blauwe-kleur);
+    color: var(--blue-color);
 }
 
 #homepagina nav ul li:last-of-type a:hover,
 #homepagina nav ul li:last-of-type a:focus {
-    color: var(--roze-kleur);
+    color: var(--pink-color);
 }
 
 
@@ -209,6 +209,9 @@ a {
     transition: transform .5s ease-in-out;
 }
 
+main>.infoBlock{
+    padding: 3rem;
+}
 
 .infoBlock {
     position: relative;
@@ -223,13 +226,41 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 6rem;
 }
 
 /* pixelart icon */
 #homepagina>section>aside {
-    width: 10rem;
+    width: 7rem;
 }
 
 #homepagina>section>section {
     text-align: center;
+}
+
+/* navigationbuttons homepage */
+#homepagina>section>section>nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.solidButton {
+    display: inline-block;
+    padding: .75rem;
+    margin: 2rem 0 .5rem 0;
+    font-family: var(--font-paragraph);
+    font-size: 1.1rem;
+    background-color: var(--yellow-color);
+    color: var(--font-color2);
+    border-radius: 5rem;
+}
+
+.borderButton {
+    display: inline-block;
+    padding: .75rem;
+    margin: .5rem 0 2rem 0;
+    font-family: var(--font-paragraph);
+    font-size: 1.1rem;
+    border: .2rem solid var(--yellow-color);
+    border-radius: 5rem;
 }
