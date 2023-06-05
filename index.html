@@ -15,6 +15,8 @@
     <link href="styles/style.css" rel="stylesheet">
     <title>Portfolio Pip Harsveld</title>
 
+    <script src="/scripts/script.js" defer></script>
+
 
     <!-- Lettertypes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,7 +27,7 @@
 </head>
 
 <body>
-    <header id="homepagina">
+    <header id="navbar">
         <div>
             <a href="#homepagina">Pip Harsveld</a>
             <button class="menuBtn"><img src="/images/menuicon.svg" alt="Menu"></button> <!--Menu button-->
@@ -39,21 +41,21 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <section class="infoBlock">
+    </header>
+    <main>
+        <section id="introduction">
             <aside>
                 <img src="images/pixelkarakter.png" alt="pixelart karakter van Pip achter een bureau">
             </aside>
             <section>
                 <h1>Hey! Ik ben Pip&#128075;</h1>
-                <p>Tweedejaars Communication & Multimedia Design student met een passie voor front-end development.</p>
+                <p>Derdejaars Communication & Multimedia Design student met een passie voor front-end development.</p>
                 <nav>
                     <a href="#projecten" class="solidButton">Bekijk mijn werk</a>
                     <a href="#contact" class="borderButton">Neem contact op</a>
                 </nav>
             </section>
         </section>
-    </header>
-    <main>
         <!-- OVER MIJ -->
         <section id="overmij" class="infoBlock">
             <div class="dottedgrid"></div> <!--dotted grid-->
@@ -138,153 +140,34 @@
                 </p>
                 <ul>
                     <li>
-                        <img src="" alt="Dinder">
-                        <article>
-                            <h3>Dinder</h3>
-                            <h4>De opdracht</h4>
-                            <p>
-                                Voor blok tech kreeg ik de opdracht om samen met een groep een op tinder geïnspireerde
-                                applicatie te maken, waarbij front-end, back-end en een database gebruikt worden.
-                            </p>
-                            <h4>Mijn invulling</h4>
-                            <p>
-                                Wij hebben Dinder gemaakt, Tinder maar dan voor je dinner! Op Dinder kan de gebruiker
-                                inloggen en vervolgens verschillende restaurantjes naar links of naar rechts swipen.
-                                Alle
-                                gelikte restaurants worden opgeslagen in de database, zodat de gebruiker ze later terug
-                                kan
-                                vinden.
-                            </p>
-                            <img src="" alt=""></a>
-                            <div>
-                                <a href="https://github.com/PipHarsveld/dinder" target="_blank">Bekijk het project</a>
-                            </div>
-                            <button class="closeBtn"><img src="/images/closeicon.svg" alt="Sluiten"></button>
-                        </article>
+                        <a href="/rijkskunst.html">
+                            <img src="images/overzicht_rijkskunst.png" alt="RijksKunst"></a>
+                        <p>Rijkskunst</p>
+                        </a>
                     </li>
                     <li>
-                        <img src="images/overzicht_plantrebelz.png" alt="Plantrebelz"></a>
-                        <article>
-                            <h3>Plantrebelz</h3>
-                            <h4>De opdracht</h4>
-                            <p>
-                                De opdracht was om een bestaande website te kiezen en daarvan twee pagina's na te maken.
-                                Waar mogelijk kan je de website ook verbeteren, denk aan semantische html in plaats van
-                                div
-                                of het toegankelijk maken voor mensen met een beperking.
-                            </p>
-                            <h4>Mijn invulling</h4>
-                            <p>
-                                Voor deze opdracht heb ik de website van Plantrebelz gekozen. Ik vond dit een goed
-                                ontworpen
-                                website met genoeg mogelijkheden voor verbeterpunten op frontend gebied. Ik ben begonnen
-                                met
-                                mobile-first en heb dat daarna uitgebreid tot een volledig responsive website.
-                            </p>
-                            <img src="images/screenshotPlantsome.png"
-                                alt="Screenshot van de door Pip gecodeerde website Plantrebelz"></a>
-                            <div>
-                                <a href="https://pipharsveld.github.io/plantRebelz/" target="_blank">Bekijk het
-                                    project</a>
-                                <a href="https://github.com/PipHarsveld/plantRebelz" target="_blank">Bekijk de code</a>
-                            </div>
-                            <button class="closeBtn"><img src="/images/closeicon.svg" alt="Sluiten"></button>
-                        </article>
+                        <a href="/plantrebelz.html">
+                            <img src="images/overzicht_plantrebelz.png" alt="Plantrebelz"></a>
+                        <p>Plantrebelz</p>
+                        </a>
                     </li>
                     <li>
-                        <img src="images/overzicht_happyplant.png" alt="Happyplant"></a>
-                        <article>
-                            <h3>Happy Plant</h3>
-                            <h4>De opdracht</h4>
-                            <p>
-                                Tijdens mijn minor Internet Of Things kreeg ik de individuele opdracht om een product te
-                                ontwikkelen die gebruik maakt van het Internet of
-                                Things, rekening houdend met de gebruikersbehoeften en de commerciële haalbaarheid.
-                            </p>
-                            <h4>Mijn invulling</h4>
-                            <p>
-                                Ik heb een product gemaakt die de luchtvochtigheid en temperatuur in een kamer kan meten
-                                en
-                                die deze data toont op een website. De gebruiker kan op deze manier in de gaten houden
-                                of de
-                                omgevingsfacturen goed zijn om diens planten gelukkig te houden.
-                            </p>
-                            <img src="images/detail_happyplant.jpg"
-                                alt="Wiring diagram van de input en output van happyplant"></a>
-                            <a href="https://iot.dev.hihva.nl/2022-2023-sep-jan/individual-project/iot-harsvep/"
-                                target="_blank">Bekijk het project</a>
-                            <button class="closeBtn"><img src="/images/closeicon.svg" alt="Sluiten"></button>
-                        </article>
+                        <a href="/portfolio.html">
+                            <img src="images/overzicht_portfolio.png" alt="Portfolio"></a>
+                        <p>Portfolio</p>
+                        </a>
                     </li>
                     <li>
-                        <img src="images/overzicht_portfolio.png" alt="Portfolio"></a>
-                        <article>
-                            <h3>Portfolio</h3>
-                            <h4>De opdracht</h4>
-                            <p>
-                                Om mezelf als designer en developer goed neer te zetten, wilde ik graag een portfolio
-                                maken
-                                waar een selectie van mijn projecten te zien zijn.
-                            </p>
-                            <h4>Mijn invulling</h4>
-                            <p>
-                                Ik ben begonnen met het opdoen van inspiratie op internet en het maken van een soort
-                                moodboard. Vervolgens heb ik schetsen gemaakt en heb ik het design uitgewerkt in adobe
-                                XD.
-                                Tot slot ben ik alles gaan coderen en het resultaat is hier te zien op pipharsveld.nl.
-                            </p>
-                            <img src="images/schetsPortfolio.jpeg" alt="Wireframe van de portfolio website"></a>
-                            <a href="https://github.com/PipHarsveld/portfolio" target="_blank">Bekijk de code</a>
-                            <button class="closeBtn"><img src="/images/closeicon.svg" alt="Sluiten"></button>
-                        </article>
+                        <a href="/virtuelecamping.html">
+                            <img src="images/overzicht_virtuelecamping.png" alt="De Virtuele Camping"></a>
+                        <p>Virtuele Camping</p>
+                        </a>
                     </li>
                     <li>
-                        <img src="images/overzicht_virtuelecamping.png" alt="De Virtuele Camping"></a>
-                        <article>
-                            <h3>Virtuele camping</h3>
-                            <h4>De opdracht</h4>
-                            <p>
-                                De opdracht was om een interactieve Javascript applicatie te maken, die ontwikkeld is
-                                zonder
-                                het gebruik van libraries of frameworks. Je mag hierbij zelf bedenken wat voor soort
-                                applicatie dat wordt, maar denk bijvoorbeeld aan een tamagotchi.
-                            </p>
-                            <h4>Mijn invulling</h4>
-                            <p>
-                                Vanwege Covid-19 zit iedereen thuis en verlangen we eigenlijk allemaal weer naar
-                                vakantie.
-                                Ik heb daarom een virtuele camping gemaakt, waarbij de gebruiker in een soort game zijn
-                                eigen kampeerplaats kan opzetten.
-                            </p>
-                            <img src="images/schetsIp.jpeg" alt="Schets van de website De Virtuele Camping"></a>
-                            <a href="https://oege.ie.hva.nl/~harsvep/Inleiding%20programmeren%20-%20Eindopdracht%20-%20Pip.Harsveld/"
-                                target="_blank">Bekijk het project</a>
-                            <button class="closeBtn"><img src="/images/closeicon.svg" alt="Sluiten"></button>
-                        </article>
-                    </li>
-                    <li>
-                        <img src="images/overzicht_rijkskunst.png" alt="RijksKunst"></a>
-                        <article>
-                            <h3>Rijkskunst</h3>
-                            <h4>De opdracht</h4>
-                            <p>
-                                Voor dit project was de opdracht; maak een serverside rendered Progressive Web App,
-                                waarbij
-                                je ook de performance gaat optimaliseren.
-                            </p>
-                            <h4>Mijn invulling</h4>
-                            <p>
-                                Om de kunst van het Rijksmuseum te kunnen bekijken uit je luie stoel heb ik de webapp
-                                Rijkskunst ontwikkeld. Door middel van een API van het Rijksmuseum worden de werken
-                                ingeladen en kan de gebruiker deze per categorie bekijken.
-                            </p>
-                            <img src="images/detail_rijkskunst.png" alt="Screenshot van de Rijkskunst website"></a>
-                            <div>
-                                <a href="https://rijkskunst.cyclic.app/" target="_blank">Bekijk het project</a>
-                                <a href="https://github.com/PipHarsveld/rijkskunst" target="_blank">Bekijk de code</a>
-                            </div>
-                            <button class="closeBtn"><img src="/images/closeicon.svg" alt="Sluiten"></button>
-                        </article>
+                        <a href="/happyplant.html">
+                            <img src="images/overzicht_happyplant.png" alt="Happyplant"></a>
+                        <p>Happy Plant</p>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -317,7 +200,6 @@
     <footer>
         <p>&#169; 2023 Pip Harsveld</p>
     </footer>
-    <script src="/scripts/script.js"></script>
 </body>
 
 </html>
