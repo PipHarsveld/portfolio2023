@@ -120,11 +120,11 @@ a {
 /*******/
 /* NAV */
 /*******/
-#homepagina {
+#navbar {
     padding: 1.5rem;
 }
 
-#homepagina>div {
+#navbar>div {
     padding: 1rem 1.5rem;
     display: flex;
     justify-content: space-between;
@@ -136,7 +136,7 @@ a {
     z-index: 10;
 }
 
-#homepagina>nav {
+#navbar>nav {
     position: fixed;
     top: 0;
     left: 0;
@@ -150,7 +150,7 @@ a {
     transform: translateX(100%);
 }
 
-#homepagina>nav>button {
+#navbar>nav>button {
     margin: 1.5rem;
     width: 2.5rem;
     aspect-ratio: 1/1;
@@ -159,7 +159,7 @@ a {
     top: 0;
 }
 
-#homepagina>nav>ul {
+#navbar>nav>ul {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -169,27 +169,27 @@ a {
     transform: translate(-50%, -50%);
 }
 
-#homepagina>nav>ul>li {
+#navbar>nav>ul>li {
     margin-bottom: 3rem;
 }
 
-#homepagina nav ul li:first-of-type a:hover,
-#homepagina nav ul li:first-of-type a:focus {
+#navbar nav ul li:first-of-type a:hover,
+#navbar nav ul li:first-of-type a:focus {
     color: var(--yellow-color);
 }
 
-#homepagina nav ul li:nth-of-type(2) a:hover,
-#homepagina nav ul li:nth-of-type(2) a:focus {
+#navbar nav ul li:nth-of-type(2) a:hover,
+#navbar nav ul li:nth-of-type(2) a:focus {
     color: var(--green-color);
 }
 
-#homepagina nav ul li:nth-of-type(3) a:hover,
-#homepagina nav ul li:nth-of-type(3) a:focus {
+#navbar nav ul li:nth-of-type(3) a:hover,
+#navbar nav ul li:nth-of-type(3) a:focus {
     color: var(--blue-color);
 }
 
-#homepagina nav ul li:last-of-type a:hover,
-#homepagina nav ul li:last-of-type a:focus {
+#navbar nav ul li:last-of-type a:hover,
+#navbar nav ul li:last-of-type a:focus {
     color: var(--pink-color);
 }
 
@@ -236,24 +236,25 @@ main>.infoBlock {
 /****************/
 /* Intro stukje */
 /****************/
-#homepagina>section {
+#introduction {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 6.5rem;
+    padding: 6.5rem 1.5rem 0 1.5rem;
+    background-color: var(--backgroundcolor1);
 }
 
 /* pixelart icon */
-#homepagina>section>aside {
+#introduction>aside {
     width: 7rem;
 }
 
-#homepagina>section>section {
+#introduction>section {
     text-align: center;
 }
 
 /* navigationbuttons homepage */
-#homepagina>section>section>nav {
+#introduction>section>nav {
     display: flex;
     flex-direction: column;
 }
