@@ -434,7 +434,7 @@ main>.infoBlock {
 /*********/
 footer {
     background-color: var(--backgroundcolor1);
-    padding: 0.5 1.5rem;
+    padding: .5rem 1.5rem;
 }
 
 
@@ -446,6 +446,33 @@ footer {
     padding: 1.5rem;
 }
 
-.detailpage>h1{
+.detailpage>h2{
     margin: 1rem 0;
+    color: var(--blue-color);
+}
+
+.detailpage>h3{
+    margin-top: 2rem;
+    font-size: 1.1rem;
+
+}
+
+.detailpage>p{
+    margin: 0.5rem 0 1rem 0;
+}
+
+.detailpage>img{
+    margin: 1.5rem 0;
+}
+
+.solidButtonBlue {
+    display: block;
+    padding: .75rem;
+    margin: .5rem auto .5rem auto;
+    font-family: var(--font-paragraph);
+    font-size: 1rem;
+    color: var(--font-color2);
+    border-radius: 5rem;
+    background-color: var(--blue-color);
+    text-align: center;
 }
