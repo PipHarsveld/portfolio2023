@@ -120,11 +120,11 @@ a {
 /*******/
 /* NAV */
 /*******/
-#navbar {
+.navbar {
     padding: 1.5rem;
 }
 
-#navbar>div {
+.navbar>nav {
     padding: 1rem 1.5rem;
     display: flex;
     justify-content: space-between;
@@ -137,7 +137,7 @@ a {
     align-items: center;
 }
 
-#navbar>nav {
+.navbar>nav>div {
     position: fixed;
     top: 0;
     left: 0;
@@ -151,7 +151,7 @@ a {
     transform: translateX(100%);
 }
 
-#navbar>nav>button {
+.navbar>nav>div>button {
     margin: 1.5rem;
     width: 2.5rem;
     aspect-ratio: 1/1;
@@ -160,7 +160,7 @@ a {
     top: 0;
 }
 
-#navbar>nav>ul {
+.navbar>nav>div>ul {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -170,27 +170,27 @@ a {
     transform: translate(-50%, -50%);
 }
 
-#navbar>nav>ul>li {
+.navbar>nav>div>ul>li {
     margin-bottom: 3rem;
 }
 
-#navbar nav ul li:first-of-type a:hover,
-#navbar nav ul li:first-of-type a:focus {
+.navbar div ul li:first-of-type a:hover,
+.navbar div ul li:first-of-type a:focus {
     color: var(--yellow-color);
 }
 
-#navbar nav ul li:nth-of-type(2) a:hover,
-#navbar nav ul li:nth-of-type(2) a:focus {
+.navbar div ul li:nth-of-type(2) a:hover,
+.navbar div ul li:nth-of-type(2) a:focus {
     color: var(--green-color);
 }
 
-#navbar nav ul li:nth-of-type(3) a:hover,
-#navbar nav ul li:nth-of-type(3) a:focus {
+.navbar div ul li:nth-of-type(3) a:hover,
+.navbar div ul li:nth-of-type(3) a:focus {
     color: var(--blue-color);
 }
 
-#navbar nav ul li:last-of-type a:hover,
-#navbar nav ul li:last-of-type a:focus {
+.navbar div ul li:last-of-type a:hover,
+.navbar div ul li:last-of-type a:focus {
     color: var(--pink-color);
 }
 
@@ -254,6 +254,7 @@ main>.infoBlock {
     align-items: center;
     padding: 6.5rem 1.5rem 0 1.5rem;
     background-color: var(--backgroundcolor1);
+    height: 95vh;
 }
 
 /* pixelart icon */
@@ -487,3 +488,54 @@ footer {
     border-radius: 5rem;
     text-align: center;
 }
+
+
+
+
+/****************/
+/* Mediaqueries */
+/****************/
+/* Different styling from 64em */
+@media screen and (min-width: 64em) {
+    .menuBtn, .closeBtn{
+        display: none;
+    }
+
+    .navbar>nav>div {
+        transform: translateX(0%);
+        position: relative;
+        height: auto;
+        width: 25rem;
+        margin-left: auto;
+        margin-right: 1.5rem;
+    }
+
+    .navbar>nav>div>ul{
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between
+    }
+
+    .navbar>nav>div>ul>li{
+        margin-bottom: 0;
+    }
+
+    .navbar>nav>div>ul>li:first-of-type{
+        display: none;
+    }
+
+}
+
+/* .navbar>nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--backgroundcolor1);
+    z-index: 100;
+    padding: 2rem 2rem;
+    transform: translateX(100%);
+} */

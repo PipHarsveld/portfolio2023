@@ -1,7 +1,7 @@
-const openMenuBtn = document.querySelector("header>div>button");
-const closeMenuBtn = document.querySelector("header>nav>button");
-const nav = document.querySelector("header>nav");
-const navItems = document.querySelectorAll("header>nav>ul>li>a");
+const openMenuBtn = document.querySelector(".menuBtn");
+const closeMenuBtn = document.querySelector(".closeBtn");
+const nav = document.querySelector(".navbar>nav>div");
+const navItems = document.querySelectorAll(".navbar>nav>div>ul>li>a");
 
 openMenuBtn.addEventListener("click", function () {
     openMenu();
@@ -28,5 +28,3 @@ function closeMenu() {
     nav.classList.remove("openMenu");
     nav.classList.add("closeMenu");
 }
-
-console.log("Hello Suus")
