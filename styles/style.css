@@ -476,3 +476,14 @@ footer {
     background-color: var(--blue-color);
     text-align: center;
 }
+
+.borderButtonBlue {
+    display: block;
+    padding: .75rem;
+    margin: .5rem auto .5rem auto;
+    font-family: var(--font-paragraph);
+    font-size: 1rem;
+    border: .2rem solid var(--blue-color);
+    border-radius: 5rem;
+    text-align: center;
+}
