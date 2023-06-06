@@ -28,3 +28,5 @@ function closeMenu() {
     nav.classList.remove("openMenu");
     nav.classList.add("closeMenu");
 }
+
+console.log("Hello Suus")
