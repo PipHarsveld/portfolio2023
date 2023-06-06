@@ -134,6 +134,7 @@ a {
     right: 0;
     background: var(--backgroundcolor1);
     z-index: 10;
+    align-items: center;
 }
 
 #navbar>nav {
@@ -193,7 +194,16 @@ a {
     color: var(--pink-color);
 }
 
+ .menuBtn{
+    background-color: transparent;
+    border: none;
+}
 
+
+.menuBtn>svg{
+    height: 1.5rem;
+    width: 1.5rem;
+} 
 
 .closeBtn {
     background: none;
@@ -203,9 +213,11 @@ a {
     font: inherit;
     cursor: pointer;
     outline: inherit;
-    /* position: absolute;
-    top: .4rem;
-    right: .8rem; */
+}
+
+.closeBtn>svg{
+    width: 1.5rem;
+    height: 1.5rem;
 }
 
 
@@ -353,6 +365,40 @@ main>.infoBlock {
 
 
 
+/*************/
+/* Projecten */
+/*************/
+#projecten>div>ul>li{
+    padding: 1rem;
+    margin: 1rem 0;
+    border: var(--blue-color) solid .2rem;
+    width: 100%;
+}
+
+#projecten>div>ul>li>a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#projecten>div>ul>li>a>img{
+    max-height: 14rem;
+}
+
+#projecten>div>ul>li>a>p{
+    font-family: var(--font-headings);
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+#rijkskunst>a>img{
+    height: 16.5rem;
+    display: block;
+}
+
+
+
+
 
 
 /***********/
@@ -389,4 +435,17 @@ main>.infoBlock {
 footer {
     background-color: var(--backgroundcolor1);
     padding: 0.5 1.5rem;
+}
+
+
+
+/***************/
+/* Detailpages */
+/***************/
+.detailpage{
+    padding: 1.5rem;
+}
+
+.detailpage>h1{
+    margin: 1rem 0;
 }
