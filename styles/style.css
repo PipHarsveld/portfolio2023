@@ -298,6 +298,11 @@ main>.infoBlock {
     margin: 1rem 0;
 }
 
+#overmij>div>section>p>a {
+    text-decoration: underline var(--green-color);
+    cursor: pointer;
+}
+
 #overmij>div>section>h3 {
     color: var(--green-color);
     font-weight: 600;
